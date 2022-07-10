@@ -1,6 +1,12 @@
-# Edited version of qb-mechanicparts, future updates cooming 
+# Edited version of qb-mechanicparts, future updates cooming
+- If you have any issues please open a issue
+- If you have new ideas to add please do a PR
 
-# A Mechanic Job for QBCore Framework
+# My Discord
+©Sharky#4793
+https://discord.gg/rwVjZmxVtn
+
+# A Mechanic Job / Tuner Job for QBCore Framework
 Features :
 - Allows mechanics or a set job (configurable in Config file) to install vehichle upgrades as usable items. 
 - Some of the items have been set up and incorporated with to be craftable already, work will continue on this...
@@ -9,7 +15,7 @@ Features :
 
 Preview : 
 - Please make sure you use the latest dependencies aswell as core for this in order to work.
-- This Job has been tested on the latest build as of 9/2/2022
+- This Job has been tested on the latest build as of 10.07.2022
 
 Issues :
 - When crafting it doesnt check the requirements for item until running through the short minigame.
