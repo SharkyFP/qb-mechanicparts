@@ -8,7 +8,7 @@ local BackEngineVehicles = { 'ninef', 'adder', 'vagner', 't20', 'infernus', 'zen
 --------------------------------------------------
 isLoggedIn = true
 PlayerJob = {}
-local onDuty = false
+local onDuty = true
 
 RegisterNetEvent('QBCore:Client:OnPlayerLoaded')
 AddEventHandler('QBCore:Client:OnPlayerLoaded', function()
@@ -76,7 +76,7 @@ AddEventHandler("craft:engine0", function()
         flags = 16,
     }, {}, {}, function() 
         local playerPed = PlayerPedId()
-        local success = exports['qb-lock']:StartLockPickCircle(3,10)
+        local success = exports['qb-lock']:StartLockPickCircle(1,10)
    if success then
         StopAnimTask(ped, dict, "machinic_loop_mechandplayer", 1.0)
         TriggerServerEvent("craft:engine0")
@@ -101,7 +101,7 @@ AddEventHandler("craft:engine1", function()
         flags = 16,
     }, {}, {}, function() 
         local playerPed = PlayerPedId()
-        local success = exports['qb-lock']:StartLockPickCircle(3,10)
+        local success = exports['qb-lock']:StartLockPickCircle(1,10)
    if success then
         StopAnimTask(ped, dict, "machinic_loop_mechandplayer", 1.0)
         TriggerServerEvent("craft:engine1")
@@ -126,7 +126,7 @@ AddEventHandler("craft:engine2", function()
         flags = 16,
     }, {}, {}, function() 
         local playerPed = PlayerPedId()
-        local success = exports['qb-lock']:StartLockPickCircle(3,9)
+        local success = exports['qb-lock']:StartLockPickCircle(1,10)
    if success then
         StopAnimTask(ped, dict, "machinic_loop_mechandplayer", 1.0)
         TriggerServerEvent("craft:engine2")
@@ -151,7 +151,7 @@ AddEventHandler("craft:engine3", function()
         flags = 16,
     }, {}, {}, function() 
         local playerPed = PlayerPedId()
-        local success = exports['qb-lock']:StartLockPickCircle(4,9)
+        local success = exports['qb-lock']:StartLockPickCircle(1,10)
    if success then
         StopAnimTask(ped, dict, "machinic_loop_mechandplayer", 1.0)
         TriggerServerEvent("craft:engine3")
@@ -176,7 +176,7 @@ AddEventHandler("craft:engine4", function()
         flags = 16,
     }, {}, {}, function() 
         local playerPed = PlayerPedId()
-        local success = exports['qb-lock']:StartLockPickCircle(4,8)
+        local success = exports['qb-lock']:StartLockPickCircle(1,10)
    if success then
         StopAnimTask(ped, dict, "machinic_loop_mechandplayer", 1.0)
         TriggerServerEvent("craft:engine4")
@@ -202,7 +202,7 @@ AddEventHandler("craft:brake0", function()
         flags = 16,
     }, {}, {}, function() 
         local playerPed = PlayerPedId()
-        local success = exports['qb-lock']:StartLockPickCircle(3,9)
+        local success = exports['qb-lock']:StartLockPickCircle(1,10)
    if success then
         StopAnimTask(ped, dict, "machinic_loop_mechandplayer", 1.0)
         TriggerServerEvent("craft:brake0")
@@ -227,7 +227,7 @@ AddEventHandler("craft:brake1", function()
         flags = 16,
     }, {}, {}, function() 
         local playerPed = PlayerPedId()
-        local success = exports['qb-lock']:StartLockPickCircle(3,9)
+        local success = exports['qb-lock']:StartLockPickCircle(1,10)
    if success then
         StopAnimTask(ped, dict, "machinic_loop_mechandplayer", 1.0)
         TriggerServerEvent("craft:brake1")
@@ -252,7 +252,7 @@ AddEventHandler("craft:brake2", function()
         flags = 16,
     }, {}, {}, function() 
         local playerPed = PlayerPedId()
-        local success = exports['qb-lock']:StartLockPickCircle(3,9)
+        local success = exports['qb-lock']:StartLockPickCircle(1,10)
    if success then
         StopAnimTask(ped, dict, "machinic_loop_mechandplayer", 1.0)
         TriggerServerEvent("craft:brake2")
@@ -277,7 +277,7 @@ AddEventHandler("craft:brake3", function()
         flags = 16,
     }, {}, {}, function() 
         local playerPed = PlayerPedId()
-        local success = exports['qb-lock']:StartLockPickCircle(3,9)
+        local success = exports['qb-lock']:StartLockPickCircle(1,10)
    if success then
         StopAnimTask(ped, dict, "machinic_loop_mechandplayer", 1.0)
         TriggerServerEvent("craft:brake3")
@@ -302,7 +302,7 @@ AddEventHandler("craft:brake4", function()
         flags = 16,
     }, {}, {}, function() 
         local playerPed = PlayerPedId()
-        local success = exports['qb-lock']:StartLockPickCircle(3,9)
+        local success = exports['qb-lock']:StartLockPickCircle(1,10)
    if success then
         StopAnimTask(ped, dict, "machinic_loop_mechandplayer", 1.0)
         TriggerServerEvent("craft:brake4")
@@ -327,7 +327,7 @@ AddEventHandler("craft:transmission0", function()
         flags = 16,
     }, {}, {}, function() 
         local playerPed = PlayerPedId()
-        local success = exports['qb-lock']:StartLockPickCircle(3,9)
+        local success = exports['qb-lock']:StartLockPickCircle(1,10)
    if success then
         StopAnimTask(ped, dict, "machinic_loop_mechandplayer", 1.0)
         TriggerServerEvent("craft:transmission0")
@@ -352,7 +352,7 @@ AddEventHandler("craft:transmission1", function()
         flags = 16,
     }, {}, {}, function() 
         local playerPed = PlayerPedId()
-        local success = exports['qb-lock']:StartLockPickCircle(3,9)
+        local success = exports['qb-lock']:StartLockPickCircle(1,10)
    if success then
         StopAnimTask(ped, dict, "machinic_loop_mechandplayer", 1.0)
         TriggerServerEvent("craft:transmission1")
@@ -377,7 +377,7 @@ AddEventHandler("craft:transmission2", function()
         flags = 16,
     }, {}, {}, function() 
         local playerPed = PlayerPedId()
-        local success = exports['qb-lock']:StartLockPickCircle(3,9)
+        local success = exports['qb-lock']:StartLockPickCircle(1,10)
    if success then
         StopAnimTask(ped, dict, "machinic_loop_mechandplayer", 1.0)
         TriggerServerEvent("craft:transmission2")
@@ -402,7 +402,7 @@ AddEventHandler("craft:transmission3", function()
         flags = 16,
     }, {}, {}, function() 
         local playerPed = PlayerPedId()
-        local success = exports['qb-lock']:StartLockPickCircle(3,9)
+        local success = exports['qb-lock']:StartLockPickCircle(1,10)
    if success then
         StopAnimTask(ped, dict, "machinic_loop_mechandplayer", 1.0)
         TriggerServerEvent("craft:transmission3")
@@ -414,34 +414,9 @@ AddEventHandler("craft:transmission3", function()
     end)
 end)
 
-RegisterNetEvent('craft:transmission4')
-AddEventHandler("craft:transmission4", function()
-    QBCore.Functions.Progressbar("craft_transmission4", "Building Transmission...", 10000, false, true, {
-        disableMovement = true,
-        disableCarMovement = true,
-        disableMouse = false,
-        disableCombat = true,
-    }, {
-        animDict = "mini@repair",
-        anim = "fixing_a_player",
-        flags = 16,
-    }, {}, {}, function() 
-        local playerPed = PlayerPedId()
-        local success = exports['qb-lock']:StartLockPickCircle(3,9)
-   if success then
-        StopAnimTask(ped, dict, "machinic_loop_mechandplayer", 1.0)
-        TriggerServerEvent("craft:transmission4")
-        ClearPedTasks(playerPed)
-    else
-        QBCore.Functions.Notify("Failed!", "error")
-        ClearPedTasks(playerPed)
-        end
-    end)
-end)
-
 RegisterNetEvent('craft:suspension0')
 AddEventHandler("craft:suspension0", function()
-    QBCore.Functions.Progressbar("craft_suspension0", "Building Transmission...", 10000, false, true, {
+    QBCore.Functions.Progressbar("craft_suspension0", "Building Suspension...", 10000, false, true, {
         disableMovement = true,
         disableCarMovement = true,
         disableMouse = false,
@@ -452,7 +427,7 @@ AddEventHandler("craft:suspension0", function()
         flags = 16,
     }, {}, {}, function() 
         local playerPed = PlayerPedId()
-        local success = exports['qb-lock']:StartLockPickCircle(3,9)
+        local success = exports['qb-lock']:StartLockPickCircle(1,10)
    if success then
         StopAnimTask(ped, dict, "machinic_loop_mechandplayer", 1.0)
         TriggerServerEvent("craft:suspension0")
@@ -466,7 +441,7 @@ end)
 
 RegisterNetEvent('craft:suspension1')
 AddEventHandler("craft:suspension1", function()
-    QBCore.Functions.Progressbar("craft_suspension1", "Building Transmission...", 10000, false, true, {
+    QBCore.Functions.Progressbar("craft_suspension1", "Building Suspension...", 10000, false, true, {
         disableMovement = true,
         disableCarMovement = true,
         disableMouse = false,
@@ -477,7 +452,7 @@ AddEventHandler("craft:suspension1", function()
         flags = 16,
     }, {}, {}, function() 
         local playerPed = PlayerPedId()
-        local success = exports['qb-lock']:StartLockPickCircle(3,9)
+        local success = exports['qb-lock']:StartLockPickCircle(1,10)
    if success then
         StopAnimTask(ped, dict, "machinic_loop_mechandplayer", 1.0)
         TriggerServerEvent("craft:suspension1")
@@ -491,7 +466,7 @@ end)
 
 RegisterNetEvent('craft:suspension2')
 AddEventHandler("craft:suspension2", function()
-    QBCore.Functions.Progressbar("craft_suspension2", "Building Transmission...", 10000, false, true, {
+    QBCore.Functions.Progressbar("craft_suspension2", "Building Suspension...", 10000, false, true, {
         disableMovement = true,
         disableCarMovement = true,
         disableMouse = false,
@@ -502,7 +477,7 @@ AddEventHandler("craft:suspension2", function()
         flags = 16,
     }, {}, {}, function() 
         local playerPed = PlayerPedId()
-        local success = exports['qb-lock']:StartLockPickCircle(3,9)
+        local success = exports['qb-lock']:StartLockPickCircle(1,10)
    if success then
         StopAnimTask(ped, dict, "machinic_loop_mechandplayer", 1.0)
         TriggerServerEvent("craft:suspension2")
@@ -516,7 +491,7 @@ end)
 
 RegisterNetEvent('craft:suspension3')
 AddEventHandler("craft:suspension3", function()
-    QBCore.Functions.Progressbar("craft_suspension3", "Building Transmission...", 10000, false, true, {
+    QBCore.Functions.Progressbar("craft_suspension3", "Building Suspension...", 10000, false, true, {
         disableMovement = true,
         disableCarMovement = true,
         disableMouse = false,
@@ -527,7 +502,7 @@ AddEventHandler("craft:suspension3", function()
         flags = 16,
     }, {}, {}, function() 
         local playerPed = PlayerPedId()
-        local success = exports['qb-lock']:StartLockPickCircle(3,9)
+        local success = exports['qb-lock']:StartLockPickCircle(1,10)
    if success then
         StopAnimTask(ped, dict, "machinic_loop_mechandplayer", 1.0)
         TriggerServerEvent("craft:suspension3")
@@ -541,7 +516,7 @@ end)
 
 RegisterNetEvent('craft:suspension4')
 AddEventHandler("craft:suspension4", function()
-    QBCore.Functions.Progressbar("craft_suspension4", "Building Transmission...", 10000, false, true, {
+    QBCore.Functions.Progressbar("craft_suspension4", "Building Suspension...", 10000, false, true, {
         disableMovement = true,
         disableCarMovement = true,
         disableMouse = false,
@@ -552,7 +527,7 @@ AddEventHandler("craft:suspension4", function()
         flags = 16,
     }, {}, {}, function() 
         local playerPed = PlayerPedId()
-        local success = exports['qb-lock']:StartLockPickCircle(3,9)
+        local success = exports['qb-lock']:StartLockPickCircle(1,10)
    if success then
         StopAnimTask(ped, dict, "machinic_loop_mechandplayer", 1.0)
         TriggerServerEvent("craft:suspension4")
@@ -578,7 +553,7 @@ AddEventHandler("craft:turbo0", function()
         flags = 16,
     }, {}, {}, function() 
         local playerPed = PlayerPedId()
-        local success = exports['qb-lock']:StartLockPickCircle(3,9)
+        local success = exports['qb-lock']:StartLockPickCircle(1,10)
    if success then
         StopAnimTask(ped, dict, "machinic_loop_mechandplayer", 1.0)
         TriggerServerEvent("craft:turbo0")
@@ -603,7 +578,7 @@ AddEventHandler("craft:turbo1", function()
         flags = 16,
     }, {}, {}, function() 
         local playerPed = PlayerPedId()
-        local success = exports['qb-lock']:StartLockPickCircle(3,9)
+        local success = exports['qb-lock']:StartLockPickCircle(1,10)
    if success then
         StopAnimTask(ped, dict, "machinic_loop_mechandplayer", 1.0)
         TriggerServerEvent("craft:turbo1")
@@ -629,7 +604,7 @@ AddEventHandler("craft:windowtint0", function()
         flags = 16,
     }, {}, {}, function() 
         local playerPed = PlayerPedId()
-        local success = exports['qb-lock']:StartLockPickCircle(3,9)
+        local success = exports['qb-lock']:StartLockPickCircle(1,10)
    if success then
         StopAnimTask(ped, dict, "machinic_loop_mechandplayer", 1.0)
         TriggerServerEvent("craft:windowtint0")
@@ -654,7 +629,7 @@ AddEventHandler("craft:harness", function()
         flags = 16,
     }, {}, {}, function() 
         local playerPed = PlayerPedId()
-        local success = exports['qb-lock']:StartLockPickCircle(3,9)
+        local success = exports['qb-lock']:StartLockPickCircle(1,10)
    if success then
         StopAnimTask(ped, dict, "machinic_loop_mechandplayer", 1.0)
         TriggerServerEvent("craft:harness")
@@ -679,7 +654,7 @@ AddEventHandler("craft:repairkit", function()
         flags = 16,
     }, {}, {}, function() 
         local playerPed = PlayerPedId()
-        local success = exports['qb-lock']:StartLockPickCircle(3,9)
+        local success = exports['qb-lock']:StartLockPickCircle(1,10)
    if success then
         StopAnimTask(ped, dict, "machinic_loop_mechandplayer", 1.0)
         TriggerServerEvent("craft:repairkit")
@@ -704,7 +679,7 @@ AddEventHandler("craft:advlockpick", function()
         flags = 16,
     }, {}, {}, function() 
         local playerPed = PlayerPedId()
-        local success = exports['qb-lock']:StartLockPickCircle(3,9)
+        local success = exports['qb-lock']:StartLockPickCircle(1,10)
    if success then
         StopAnimTask(ped, dict, "machinic_loop_mechandplayer", 1.0)
         TriggerServerEvent("craft:advlockpick")
@@ -729,7 +704,7 @@ AddEventHandler('qb-mechanicparts:E0', function()
 --     local trunkpos = false
     engine = GetVehicleMod(veh, 11)
         if PlayerJob.name == Config.Job then
-            if onDuty then
+            -- if onDuty then
                   if engine ~= -1 then 
                     if vehicle ~= nil and vehicle ~= 0 then
                         if (IsBackEngine(GetEntityModel(vehicle))) then
@@ -777,9 +752,9 @@ AddEventHandler('qb-mechanicparts:E0', function()
                 else
                     QBCore.Functions.Notify("Stock Engine already installed...", "error")
                 end
-            else
-                QBCore.Functions.Notify("You need to be on duty!", "error")
-            end
+            -- else
+            --     QBCore.Functions.Notify("You need to be on duty!", "error")
+            -- end
         else
             QBCore.Functions.Notify("You are not allowed to complete this action", "error")
         end
@@ -790,7 +765,7 @@ AddEventHandler('qb-mechanicparts:E1', function()
     local PlayerJob = QBCore.Functions.GetPlayerData().job
     engine = GetVehicleMod(veh, 11)
         if PlayerJob.name == Config.Job then
-            if onDuty then
+            -- if onDuty then
                 if engine ~= 0 then
                     if vehicle ~= nil and vehicle ~= 0 then
                         if (IsBackEngine(GetEntityModel(vehicle))) then
@@ -834,9 +809,9 @@ AddEventHandler('qb-mechanicparts:E1', function()
                 else
                     QBCore.Functions.Notify("Engine Upgrade B already installed...", "error")
                 end
-            else
-                QBCore.Functions.Notify("You need to be on duty!", "error")
-            end
+            -- else
+            --     QBCore.Functions.Notify("You need to be on duty!", "error")
+            -- end
         else
             QBCore.Functions.Notify("You are not allowed to complete this action", "error")
         end
@@ -848,7 +823,7 @@ AddEventHandler('qb-mechanicparts:E2', function()
     local PlayerJob = QBCore.Functions.GetPlayerData().job
     engine = GetVehicleMod(veh, 11)
         if PlayerJob.name == Config.Job then
-            if onDuty then
+            -- if onDuty then
                 if engine ~= 1 then 
                     if vehicle ~= nil and vehicle ~= 0 then
                         if (IsBackEngine(GetEntityModel(vehicle))) then
@@ -892,9 +867,9 @@ AddEventHandler('qb-mechanicparts:E2', function()
                 else
                     QBCore.Functions.Notify("Engine Upgrade C already installed...", "error")
                 end
-            else
-                QBCore.Functions.Notify("You need to be on duty!", "error")
-            end
+            -- else
+            --     QBCore.Functions.Notify("You need to be on duty!", "error")
+            -- end
         else
             QBCore.Functions.Notify("You are not allowed to complete this action", "error")
         end
@@ -906,7 +881,7 @@ AddEventHandler('qb-mechanicparts:E3', function()
     local PlayerJob = QBCore.Functions.GetPlayerData().job
     engine = GetVehicleMod(veh, 11)
         if PlayerJob.name == Config.Job then
-            if onDuty then
+            -- if onDuty then
                 if engine ~= 2 then 
                     if vehicle ~= nil and vehicle ~= 0 then
                         if (IsBackEngine(GetEntityModel(vehicle))) then
@@ -950,9 +925,9 @@ AddEventHandler('qb-mechanicparts:E3', function()
                 else
                     QBCore.Functions.Notify("Engine Upgrade D already installed...", "error")
                 end
-            else
-                QBCore.Functions.Notify("You need to be on duty!", "error")
-            end
+            -- else
+            --     QBCore.Functions.Notify("You need to be on duty!", "error")
+            -- end
         else
             QBCore.Functions.Notify("You are not allowed to complete this action", "error")
         end
@@ -965,7 +940,7 @@ AddEventHandler('qb-mechanicparts:E4', function()
     local PlayerJob = QBCore.Functions.GetPlayerData().job
     engine = GetVehicleMod(veh, 11)
         if PlayerJob.name == Config.Job then
-            if onDuty then
+            -- if onDuty then
                 if engine ~= 3 then 
                     if vehicle ~= nil and vehicle ~= 0 then
                         if (IsBackEngine(GetEntityModel(vehicle))) then
@@ -1009,9 +984,9 @@ AddEventHandler('qb-mechanicparts:E4', function()
                 else
                     QBCore.Functions.Notify("Engine Upgrade S already installed...", "error")
                 end
-            else
-                QBCore.Functions.Notify("You need to be on duty!", "error")
-            end
+            -- else
+            --     QBCore.Functions.Notify("You need to be on duty!", "error")
+            -- end
         else
             QBCore.Functions.Notify("You are not allowed to complete this action", "error")
         end
@@ -1024,7 +999,7 @@ AddEventHandler('qb-mechanicparts:B0', function()
     local PlayerJob = QBCore.Functions.GetPlayerData().job
     brake = GetVehicleMod(veh, 12)
         if PlayerJob.name == Config.Job then
-            if onDuty then
+            -- if onDuty then
                 if brake ~= -1 then
                     if vehicle ~= nil and vehicle ~= 0 then
                         if (IsBackEngine(GetEntityModel(vehicle))) then
@@ -1068,9 +1043,9 @@ AddEventHandler('qb-mechanicparts:B0', function()
                 else
                     QBCore.Functions.Notify("Stock Brakes already installed...", "error")
                 end
-            else
-                QBCore.Functions.Notify("You need to be on duty!", "error")
-            end
+            -- else
+            --     QBCore.Functions.Notify("You need to be on duty!", "error")
+            -- end
         else
             QBCore.Functions.Notify("You are not allowed to complete this action", "error")
         end
@@ -1082,7 +1057,7 @@ AddEventHandler('qb-mechanicparts:B1', function()
     local PlayerJob = QBCore.Functions.GetPlayerData().job
     brake = GetVehicleMod(veh, 12)
         if PlayerJob.name == Config.Job then
-            if onDuty then
+            -- if onDuty then
                 if brake ~= 0 then
                     if vehicle ~= nil and vehicle ~= 0 then
                         if (IsBackEngine(GetEntityModel(vehicle))) then
@@ -1126,9 +1101,9 @@ AddEventHandler('qb-mechanicparts:B1', function()
                 else
                     QBCore.Functions.Notify("Brakes Upgrade B already installed...", "error")
                 end
-            else
-                QBCore.Functions.Notify("You need to be on duty!", "error")
-            end
+            -- else
+            --     QBCore.Functions.Notify("You need to be on duty!", "error")
+            -- end
         else
             QBCore.Functions.Notify("You are not allowed to complete this action", "error")
         end
@@ -1140,7 +1115,7 @@ AddEventHandler('qb-mechanicparts:B2', function()
     local PlayerJob = QBCore.Functions.GetPlayerData().job
     brake = GetVehicleMod(veh, 12)
         if PlayerJob.name == Config.Job then
-            if onDuty then
+            -- if onDuty then
                 if brake ~= 1 then
                     if vehicle ~= nil and vehicle ~= 0 then
                         if (IsBackEngine(GetEntityModel(vehicle))) then
@@ -1184,9 +1159,9 @@ AddEventHandler('qb-mechanicparts:B2', function()
                 else
                     QBCore.Functions.Notify("Brakes Upgrade C already installed...", "error")
                 end
-            else
-                QBCore.Functions.Notify("You need to be on duty!", "error")
-            end
+            -- else
+            --     QBCore.Functions.Notify("You need to be on duty!", "error")
+            -- end
         else
             QBCore.Functions.Notify("You are not allowed to complete this action", "error")
         end
@@ -1198,7 +1173,7 @@ AddEventHandler('qb-mechanicparts:B3', function()
     local PlayerJob = QBCore.Functions.GetPlayerData().job
     brake = GetVehicleMod(veh, 12)
         if PlayerJob.name == Config.Job then
-            if onDuty then
+            -- if onDuty then
                 if brake ~= 2 then
                     if vehicle ~= nil and vehicle ~= 0 then
                         if (IsBackEngine(GetEntityModel(vehicle))) then
@@ -1242,9 +1217,9 @@ AddEventHandler('qb-mechanicparts:B3', function()
                 else
                     QBCore.Functions.Notify("Brakes Upgrade S already installed...", "error")
                 end
-            else
-                QBCore.Functions.Notify("You need to be on duty!", "error")
-            end
+            -- else
+            --     QBCore.Functions.Notify("You need to be on duty!", "error")
+            -- end
         else
             QBCore.Functions.Notify("You are not allowed to complete this action", "error")
         end
@@ -1257,7 +1232,7 @@ AddEventHandler('qb-mechanicparts:T0', function()
     local PlayerJob = QBCore.Functions.GetPlayerData().job
     transmission = GetVehicleMod(veh, 13)
         if PlayerJob.name == Config.Job then
-            if onDuty then
+            -- if onDuty then
                 if transmission ~= -1 then
                     if vehicle ~= nil and vehicle ~= 0 then
                         if (IsBackEngine(GetEntityModel(vehicle))) then
@@ -1301,9 +1276,9 @@ AddEventHandler('qb-mechanicparts:T0', function()
                 else
                     QBCore.Functions.Notify("Stock Transmission already installed...", "error")
                 end
-            else
-                QBCore.Functions.Notify("You need to be on duty!", "error")
-            end
+            -- else
+            --     QBCore.Functions.Notify("You need to be on duty!", "error")
+            -- end
         else
             QBCore.Functions.Notify("You are not allowed to complete this action", "error")
         end
@@ -1315,7 +1290,7 @@ AddEventHandler('qb-mechanicparts:T1', function()
     local PlayerJob = QBCore.Functions.GetPlayerData().job
     transmission = GetVehicleMod(veh, 13)
         if PlayerJob.name == Config.Job then
-            if onDuty then
+            -- if onDuty then
                 if transmission ~= 0 then
                     if vehicle ~= nil and vehicle ~= 0 then
                         if (IsBackEngine(GetEntityModel(vehicle))) then
@@ -1359,9 +1334,9 @@ AddEventHandler('qb-mechanicparts:T1', function()
                 else
                     QBCore.Functions.Notify("Transmission Upgrade B already installed...", "error")
                 end
-            else
-                QBCore.Functions.Notify("You need to be on duty!", "error")
-            end
+            -- else
+            --     QBCore.Functions.Notify("You need to be on duty!", "error")
+            -- end
         else
             QBCore.Functions.Notify("You are not allowed to complete this action", "error")
         end
@@ -1373,7 +1348,7 @@ AddEventHandler('qb-mechanicparts:T2', function()
     local PlayerJob = QBCore.Functions.GetPlayerData().job
     transmission = GetVehicleMod(veh, 13)
         if PlayerJob.name == Config.Job then
-            if onDuty then
+            -- if onDuty then
                 if transmission ~= 1 then
                     if vehicle ~= nil and vehicle ~= 0 then
                         if (IsBackEngine(GetEntityModel(vehicle))) then
@@ -1417,9 +1392,9 @@ AddEventHandler('qb-mechanicparts:T2', function()
                 else
                     QBCore.Functions.Notify("Transmission Upgrade C already installed...", "error")
                 end
-            else
-                QBCore.Functions.Notify("You need to be on duty!", "error")
-            end
+            -- else
+            --     QBCore.Functions.Notify("You need to be on duty!", "error")
+            -- end
         else
             QBCore.Functions.Notify("You are not allowed to complete this action", "error")
         end
@@ -1431,7 +1406,7 @@ AddEventHandler('qb-mechanicparts:T3', function()
     local PlayerJob = QBCore.Functions.GetPlayerData().job
     transmission = GetVehicleMod(veh, 13)
         if PlayerJob.name == Config.Job then
-            if onDuty then
+            -- if onDuty then
                 if transmission ~= 2 then
                     if vehicle ~= nil and vehicle ~= 0 then
                         if (IsBackEngine(GetEntityModel(vehicle))) then
@@ -1475,9 +1450,9 @@ AddEventHandler('qb-mechanicparts:T3', function()
                 else
                     QBCore.Functions.Notify("Transmission Upgrade S already installed...", "error")
                 end
-            else
-                QBCore.Functions.Notify("You need to be on duty!", "error")
-            end
+            -- else
+            --     QBCore.Functions.Notify("You need to be on duty!", "error")
+            -- end
         else
             QBCore.Functions.Notify("You are not allowed to complete this action", "error")
         end
@@ -1490,7 +1465,7 @@ AddEventHandler('qb-mechanicparts:S0', function()
     local PlayerJob = QBCore.Functions.GetPlayerData().job
     suspension = GetVehicleMod(veh, 15)
         if PlayerJob.name == Config.Job then
-            if onDuty then
+            -- if onDuty then
                 if suspension ~= -1 then
                     if vehicle ~= nil and vehicle ~= 0 then
                         if (IsBackEngine(GetEntityModel(vehicle))) then
@@ -1534,9 +1509,9 @@ AddEventHandler('qb-mechanicparts:S0', function()
                 else
                     QBCore.Functions.Notify("Stock Suspension already installed...", "error")
                 end
-            else
-                QBCore.Functions.Notify("You need to be on duty!", "error")
-            end
+            -- else
+            --     QBCore.Functions.Notify("You need to be on duty!", "error")
+            -- end
         else
             QBCore.Functions.Notify("You are not allowed to complete this action", "error")
         end
@@ -1548,7 +1523,7 @@ AddEventHandler('qb-mechanicparts:S1', function()
     local PlayerJob = QBCore.Functions.GetPlayerData().job
     suspension = GetVehicleMod(veh, 15)
         if PlayerJob.name == Config.Job then
-            if onDuty then
+            -- if onDuty then
                 if suspension ~= 0 then
                     if vehicle ~= nil and vehicle ~= 0 then
                         if (IsBackEngine(GetEntityModel(vehicle))) then
@@ -1592,9 +1567,9 @@ AddEventHandler('qb-mechanicparts:S1', function()
                 else
                     QBCore.Functions.Notify("Suspension Upgrade B already installed...", "error")
                 end
-            else
-                QBCore.Functions.Notify("You need to be on duty!", "error")
-            end
+            -- else
+            --     QBCore.Functions.Notify("You need to be on duty!", "error")
+            -- end
         else
             QBCore.Functions.Notify("You are not allowed to complete this action", "error")
         end
@@ -1606,7 +1581,7 @@ AddEventHandler('qb-mechanicparts:S2', function()
     local PlayerJob = QBCore.Functions.GetPlayerData().job
     suspension = GetVehicleMod(veh, 15)
         if PlayerJob.name == Config.Job then
-            if onDuty then
+            -- if onDuty then
                 if suspension ~= 1 then
                     if vehicle ~= nil and vehicle ~= 0 then
                         if (IsBackEngine(GetEntityModel(vehicle))) then
@@ -1650,9 +1625,9 @@ AddEventHandler('qb-mechanicparts:S2', function()
                 else
                     QBCore.Functions.Notify("Suspension Upgrade C already installed...", "error")
                 end
-            else
-                QBCore.Functions.Notify("You need to be on duty!", "error")
-            end
+            -- else
+            --     QBCore.Functions.Notify("You need to be on duty!", "error")
+            -- end
         else
             QBCore.Functions.Notify("You are not allowed to complete this action", "error")
         end
@@ -1664,7 +1639,7 @@ AddEventHandler('qb-mechanicparts:S3', function()
     local PlayerJob = QBCore.Functions.GetPlayerData().job
     suspension = GetVehicleMod(veh, 15)
         if PlayerJob.name == Config.Job then
-            if onDuty then
+            -- if onDuty then
                 if suspension ~= 2 then
                     if vehicle ~= nil and vehicle ~= 0 then
                         if (IsBackEngine(GetEntityModel(vehicle))) then
@@ -1708,9 +1683,9 @@ AddEventHandler('qb-mechanicparts:S3', function()
                 else
                     QBCore.Functions.Notify("Suspension Upgrade D already installed...", "error")
                 end
-            else
-                QBCore.Functions.Notify("You need to be on duty!", "error")
-            end
+            -- else
+            --     QBCore.Functions.Notify("You need to be on duty!", "error")
+            -- end
         else
             QBCore.Functions.Notify("You are not allowed to complete this action", "error")
         end
@@ -1722,7 +1697,7 @@ AddEventHandler('qb-mechanicparts:S4', function()
     local PlayerJob = QBCore.Functions.GetPlayerData().job
     suspension = GetVehicleMod(veh, 15)
         if PlayerJob.name == Config.Job then
-            if onDuty then
+            -- if onDuty then
                 if suspension ~= 3 then
                     if vehicle ~= nil and vehicle ~= 0 then
                         if (IsBackEngine(GetEntityModel(vehicle))) then
@@ -1766,9 +1741,9 @@ AddEventHandler('qb-mechanicparts:S4', function()
                 else
                     QBCore.Functions.Notify("Suspension Upgrade S already installed...", "error")
                 end
-            else
-                QBCore.Functions.Notify("You need to be on duty!", "error")
-            end
+            -- else
+            --     QBCore.Functions.Notify("You need to be on duty!", "error")
+            -- end
         else
             QBCore.Functions.Notify("You are not allowed to complete this action", "error")
         end
@@ -1782,7 +1757,7 @@ AddEventHandler('qb-mechanicparts:Turbo0', function()
     turbo = IsToggleModOn(veh, 18)
     print(turbo)
         if PlayerJob.name == Config.Job then
-            if onDuty then
+            -- if onDuty then
                 if turbo == 1 then
                     if vehicle ~= nil and vehicle ~= 0 then
                         if (IsBackEngine(GetEntityModel(vehicle))) then
@@ -1826,9 +1801,9 @@ AddEventHandler('qb-mechanicparts:Turbo0', function()
                 else
                     QBCore.Functions.Notify("Turbo Already Removed", "error")
                 end
-            else
-                QBCore.Functions.Notify("You need to be on duty!", "error")
-            end
+            -- else
+            --     QBCore.Functions.Notify("You need to be on duty!", "error")
+            -- end
         else
             QBCore.Functions.Notify("You are not allowed to complete this action", "error")
         end
@@ -1841,7 +1816,7 @@ AddEventHandler('qb-mechanicparts:Turbo1', function()
     turbo = IsToggleModOn(veh, 18)
     print(turbo)
         if PlayerJob.name == Config.Job then
-            if onDuty then
+            -- if onDuty then
                 if turbo == false then
                     if vehicle ~= nil and vehicle ~= 0 then
                         if (IsBackEngine(GetEntityModel(vehicle))) then
@@ -1886,9 +1861,9 @@ AddEventHandler('qb-mechanicparts:Turbo1', function()
                 else
                     QBCore.Functions.Notify("Turbo already installed...", "error")
                 end
-            else
-                QBCore.Functions.Notify("You need to be on duty!", "error")
-            end
+            -- else
+            --     QBCore.Functions.Notify("You need to be on duty!", "error")
+            -- end
         else
             QBCore.Functions.Notify("You are not allowed to complete this action", "error")
         end
@@ -1901,7 +1876,7 @@ AddEventHandler('qb-mechanicparts:WT0', function()
     local PlayerJob = QBCore.Functions.GetPlayerData().job
     tint = GetVehicleMod(veh, 46)
         if PlayerJob.name == Config.Job then
-            if onDuty then
+            -- if onDuty then
                 if tint ~= 0 then
                     if vehicle ~= nil and vehicle ~= 0 then
                         if (IsBackEngine(GetEntityModel(vehicle))) then
@@ -1945,9 +1920,9 @@ AddEventHandler('qb-mechanicparts:WT0', function()
                 else
                     QBCore.Functions.Notify("Stock Tint already installed...", "error")
                 end
-            else
-                QBCore.Functions.Notify("You need to be on duty!", "error")
-            end
+            -- else
+            --     QBCore.Functions.Notify("You need to be on duty!", "error")
+            -- end
         else
             QBCore.Functions.Notify("You are not allowed to complete this action", "error")
         end
@@ -1959,7 +1934,7 @@ AddEventHandler('qb-mechanicparts:WT1', function()
     local PlayerJob = QBCore.Functions.GetPlayerData().job
     tint = GetVehicleMod(veh, 46)
         if PlayerJob.name == Config.Job then
-            if onDuty then
+            -- if onDuty then
                 if tint ~= 1 then
                     if vehicle ~= nil and vehicle ~= 0 then
                         if (IsBackEngine(GetEntityModel(vehicle))) then
@@ -2003,9 +1978,9 @@ AddEventHandler('qb-mechanicparts:WT1', function()
                 else
                     QBCore.Functions.Notify("Stage 1 Tint already installed...", "error")
                 end
-            else
-                QBCore.Functions.Notify("You need to be on duty!", "error")
-            end
+            -- else
+            --     QBCore.Functions.Notify("You need to be on duty!", "error")
+            -- end
         else
             QBCore.Functions.Notify("You are not allowed to complete this action", "error")
         end
@@ -2017,7 +1992,7 @@ AddEventHandler('qb-mechanicparts:WT2', function()
     local PlayerJob = QBCore.Functions.GetPlayerData().job
     tint = GetVehicleMod(veh, 46)
         if PlayerJob.name == Config.Job then
-            if onDuty then
+            -- if onDuty then
                 if tint ~= 2 then
                     if vehicle ~= nil and vehicle ~= 0 then
                         if (IsBackEngine(GetEntityModel(vehicle))) then
@@ -2061,9 +2036,9 @@ AddEventHandler('qb-mechanicparts:WT2', function()
                 else
                     QBCore.Functions.Notify("Stage 2 Tint already installed...", "error")
                 end
-            else
-                QBCore.Functions.Notify("You need to be on duty!", "error")
-            end
+            -- else
+            --     QBCore.Functions.Notify("You need to be on duty!", "error")
+            -- end
         else
             QBCore.Functions.Notify("You are not allowed to complete this action", "error")
         end
@@ -2076,7 +2051,7 @@ AddEventHandler('qb-mechanicparts:WT3', function()
     local PlayerJob = QBCore.Functions.GetPlayerData().job
     tint = GetVehicleMod(veh, 46)
         if PlayerJob.name == Config.Job then
-            if onDuty then
+            -- if onDuty then
                 if tint ~= 3 then
                     if vehicle ~= nil and vehicle ~= 0 then
                         if (IsBackEngine(GetEntityModel(vehicle))) then
@@ -2120,9 +2095,9 @@ AddEventHandler('qb-mechanicparts:WT3', function()
                 else
                     QBCore.Functions.Notify("Stage 3 Tint already installed...", "error")
                 end
-            else
-                QBCore.Functions.Notify("You need to be on duty!", "error")
-            end
+            -- else
+            --     QBCore.Functions.Notify("You need to be on duty!", "error")
+            -- end
         else
             QBCore.Functions.Notify("You are not allowed to complete this action", "error")
         end
@@ -2135,7 +2110,7 @@ AddEventHandler('qb-mechanicparts:HLS', function()
     local PlayerJob = QBCore.Functions.GetPlayerData().job
     headlight = GetVehicleMod(veh, 22)
         if PlayerJob.name == Config.Job then
-            if onDuty then
+            -- if onDuty then
                 if headlight ~= 3 then
                     if vehicle ~= nil and vehicle ~= 0 then
                         if (IsBackEngine(GetEntityModel(vehicle))) then
@@ -2180,9 +2155,9 @@ AddEventHandler('qb-mechanicparts:HLS', function()
                 else
                     QBCore.Functions.Notify("This colour is already installed...", "error")
                 end
-            else
-                QBCore.Functions.Notify("You need to be on duty!", "error")
-            end
+            -- else
+            --     QBCore.Functions.Notify("You need to be on duty!", "error")
+            -- end
         else
             QBCore.Functions.Notify("You are not allowed to complete this action", "error")
         end
@@ -2194,7 +2169,7 @@ AddEventHandler('qb-mechanicparts:HL0', function()
     local PlayerJob = QBCore.Functions.GetPlayerData().job
     headlight = GetVehicleMod(veh, 22)
         if PlayerJob.name == Config.Job then
-            if onDuty then
+            -- if onDuty then
                 if headlight ~= 3 then
                     if vehicle ~= nil and vehicle ~= 0 then
                         if (IsBackEngine(GetEntityModel(vehicle))) then
@@ -2239,9 +2214,9 @@ AddEventHandler('qb-mechanicparts:HL0', function()
                 else
                     QBCore.Functions.Notify("This colour is already installed...", "error")
                 end
-            else
-                QBCore.Functions.Notify("You need to be on duty!", "error")
-            end
+            -- else
+            --     QBCore.Functions.Notify("You need to be on duty!", "error")
+            -- end
         else
             QBCore.Functions.Notify("You are not allowed to complete this action", "error")
         end
@@ -2253,7 +2228,7 @@ AddEventHandler('qb-mechanicparts:HL1', function()
     local PlayerJob = QBCore.Functions.GetPlayerData().job
     headlight = GetVehicleMod(veh, 22)
         if PlayerJob.name == Config.Job then
-            if onDuty then
+            -- if onDuty then
                 if headlight ~= 3 then
                     if vehicle ~= nil and vehicle ~= 0 then
                         if (IsBackEngine(GetEntityModel(vehicle))) then
@@ -2298,9 +2273,9 @@ AddEventHandler('qb-mechanicparts:HL1', function()
                 else
                     QBCore.Functions.Notify("This colour is already installed...", "error")
                 end
-            else
-                QBCore.Functions.Notify("You need to be on duty!", "error")
-            end
+            -- else
+            --     QBCore.Functions.Notify("You need to be on duty!", "error")
+            -- end
         else
             QBCore.Functions.Notify("You are not allowed to complete this action", "error")
         end
@@ -2312,7 +2287,7 @@ AddEventHandler('qb-mechanicparts:HL2', function()
     local PlayerJob = QBCore.Functions.GetPlayerData().job
     headlight = GetVehicleMod(veh, 22)
         if PlayerJob.name == Config.Job then
-            if onDuty then
+            -- if onDuty then
                 if headlight ~= 3 then
                     if vehicle ~= nil and vehicle ~= 0 then
                         if (IsBackEngine(GetEntityModel(vehicle))) then
@@ -2357,9 +2332,9 @@ AddEventHandler('qb-mechanicparts:HL2', function()
                 else
                     QBCore.Functions.Notify("This colour is already installed...", "error")
                 end
-            else
-                QBCore.Functions.Notify("You need to be on duty!", "error")
-            end
+            -- else
+            --     QBCore.Functions.Notify("You need to be on duty!", "error")
+            -- end
         else
             QBCore.Functions.Notify("You are not allowed to complete this action", "error")
         end
@@ -2371,7 +2346,7 @@ AddEventHandler('qb-mechanicparts:HL3', function()
     local PlayerJob = QBCore.Functions.GetPlayerData().job
     headlight = GetVehicleMod(veh, 22)
         if PlayerJob.name == Config.Job then
-            if onDuty then
+            -- if onDuty then
                 if headlight ~= 3 then
                     if vehicle ~= nil and vehicle ~= 0 then
                         if (IsBackEngine(GetEntityModel(vehicle))) then
@@ -2416,9 +2391,9 @@ AddEventHandler('qb-mechanicparts:HL3', function()
                 else
                     QBCore.Functions.Notify("This colour is already installed...", "error")
                 end
-            else
-                QBCore.Functions.Notify("You need to be on duty!", "error")
-            end
+            -- else
+            --     QBCore.Functions.Notify("You need to be on duty!", "error")
+            -- end
         else
             QBCore.Functions.Notify("You are not allowed to complete this action", "error")
         end
@@ -2430,7 +2405,7 @@ AddEventHandler('qb-mechanicparts:HL4', function()
     local PlayerJob = QBCore.Functions.GetPlayerData().job
     headlight = GetVehicleMod(veh, 22)
         if PlayerJob.name == Config.Job then
-            if onDuty then
+            -- if onDuty then
                 if headlight ~= 3 then
                     if vehicle ~= nil and vehicle ~= 0 then
                         if (IsBackEngine(GetEntityModel(vehicle))) then
@@ -2475,9 +2450,9 @@ AddEventHandler('qb-mechanicparts:HL4', function()
                 else
                     QBCore.Functions.Notify("This colour is already installed...", "error")
                 end
-            else
-                QBCore.Functions.Notify("You need to be on duty!", "error")
-            end
+            -- else
+            --     QBCore.Functions.Notify("You need to be on duty!", "error")
+            -- end
         else
             QBCore.Functions.Notify("You are not allowed to complete this action", "error")
         end
@@ -2489,7 +2464,7 @@ AddEventHandler('qb-mechanicparts:HL5', function()
     local PlayerJob = QBCore.Functions.GetPlayerData().job
     headlight = GetVehicleMod(veh, 22)
         if PlayerJob.name == Config.Job then
-            if onDuty then
+            -- if onDuty then
                 if headlight ~= 3 then
                     if vehicle ~= nil and vehicle ~= 0 then
                         if (IsBackEngine(GetEntityModel(vehicle))) then
@@ -2534,9 +2509,9 @@ AddEventHandler('qb-mechanicparts:HL5', function()
                 else
                     QBCore.Functions.Notify("This colour is already installed...", "error")
                 end
-            else
-                QBCore.Functions.Notify("You need to be on duty!", "error")
-            end
+            -- else
+            --     QBCore.Functions.Notify("You need to be on duty!", "error")
+            -- end
         else
             QBCore.Functions.Notify("You are not allowed to complete this action", "error")
         end
@@ -2548,7 +2523,7 @@ AddEventHandler('qb-mechanicparts:HL6', function()
     local PlayerJob = QBCore.Functions.GetPlayerData().job
     headlight = GetVehicleMod(veh, 22)
         if PlayerJob.name == Config.Job then
-            if onDuty then
+            -- if onDuty then
                 if headlight ~= 3 then
                     if vehicle ~= nil and vehicle ~= 0 then
                         if (IsBackEngine(GetEntityModel(vehicle))) then
@@ -2593,9 +2568,9 @@ AddEventHandler('qb-mechanicparts:HL6', function()
                 else
                     QBCore.Functions.Notify("This colour is already installed...", "error")
                 end
-            else
-                QBCore.Functions.Notify("You need to be on duty!", "error")
-            end
+            -- else
+            --     QBCore.Functions.Notify("You need to be on duty!", "error")
+            -- end
         else
             QBCore.Functions.Notify("You are not allowed to complete this action", "error")
         end
@@ -2607,7 +2582,7 @@ AddEventHandler('qb-mechanicparts:HL7', function()
     local PlayerJob = QBCore.Functions.GetPlayerData().job
     headlight = GetVehicleMod(veh, 22)
         if PlayerJob.name == Config.Job then
-            if onDuty then
+            -- if onDuty then
                 if headlight ~= 3 then
                     if vehicle ~= nil and vehicle ~= 0 then
                         if (IsBackEngine(GetEntityModel(vehicle))) then
@@ -2652,9 +2627,9 @@ AddEventHandler('qb-mechanicparts:HL7', function()
                 else
                     QBCore.Functions.Notify("This colour is already installed...", "error")
                 end
-            else
-                QBCore.Functions.Notify("You need to be on duty!", "error")
-            end
+            -- else
+            --     QBCore.Functions.Notify("You need to be on duty!", "error")
+            -- end
         else
             QBCore.Functions.Notify("You are not allowed to complete this action", "error")
         end
@@ -2666,7 +2641,7 @@ AddEventHandler('qb-mechanicparts:HL8', function()
     local PlayerJob = QBCore.Functions.GetPlayerData().job
     headlight = GetVehicleMod(veh, 22)
         if PlayerJob.name == Config.Job then
-            if onDuty then
+            -- if onDuty then
                 if headlight ~= 3 then
                     if vehicle ~= nil and vehicle ~= 0 then
                         if (IsBackEngine(GetEntityModel(vehicle))) then
@@ -2711,9 +2686,9 @@ AddEventHandler('qb-mechanicparts:HL8', function()
                 else
                     QBCore.Functions.Notify("This colour is already installed...", "error")
                 end
-            else
-                QBCore.Functions.Notify("You need to be on duty!", "error")
-            end
+            -- else
+            --     QBCore.Functions.Notify("You need to be on duty!", "error")
+            -- end
         else
             QBCore.Functions.Notify("You are not allowed to complete this action", "error")
         end
@@ -2725,7 +2700,7 @@ AddEventHandler('qb-mechanicparts:HL9', function()
     local PlayerJob = QBCore.Functions.GetPlayerData().job
     headlight = GetVehicleMod(veh, 22)
         if PlayerJob.name == Config.Job then
-            if onDuty then
+            -- if onDuty then
                 if headlight ~= 3 then
                     if vehicle ~= nil and vehicle ~= 0 then
                         if (IsBackEngine(GetEntityModel(vehicle))) then
@@ -2770,9 +2745,9 @@ AddEventHandler('qb-mechanicparts:HL9', function()
                 else
                     QBCore.Functions.Notify("This colour is already installed...", "error")
                 end
-            else
-                QBCore.Functions.Notify("You need to be on duty!", "error")
-            end
+            -- else
+            --     QBCore.Functions.Notify("You need to be on duty!", "error")
+            -- end
         else
             QBCore.Functions.Notify("You are not allowed to complete this action", "error")
         end
@@ -2784,7 +2759,7 @@ AddEventHandler('qb-mechanicparts:HL10', function()
     local PlayerJob = QBCore.Functions.GetPlayerData().job
     headlight = GetVehicleMod(veh, 22)
         if PlayerJob.name == Config.Job then
-            if onDuty then
+            -- if onDuty then
                 if headlight ~= 3 then
                     if vehicle ~= nil and vehicle ~= 0 then
                         if (IsBackEngine(GetEntityModel(vehicle))) then
@@ -2829,9 +2804,9 @@ AddEventHandler('qb-mechanicparts:HL10', function()
                 else
                     QBCore.Functions.Notify("This colour is already installed...", "error")
                 end
-            else
-                QBCore.Functions.Notify("You need to be on duty!", "error")
-            end
+            -- else
+            --     QBCore.Functions.Notify("You need to be on duty!", "error")
+            -- end
         else
             QBCore.Functions.Notify("You are not allowed to complete this action", "error")
         end
@@ -2843,7 +2818,7 @@ AddEventHandler('qb-mechanicparts:HL11', function()
     local PlayerJob = QBCore.Functions.GetPlayerData().job
     headlight = GetVehicleMod(veh, 22)
         if PlayerJob.name == Config.Job then
-            if onDuty then
+            -- if onDuty then
                 if headlight ~= 3 then
                     if vehicle ~= nil and vehicle ~= 0 then
                         if (IsBackEngine(GetEntityModel(vehicle))) then
@@ -2888,9 +2863,9 @@ AddEventHandler('qb-mechanicparts:HL11', function()
                 else
                     QBCore.Functions.Notify("This colour is already installed...", "error")
                 end
-            else
-                QBCore.Functions.Notify("You need to be on duty!", "error")
-            end
+            -- else
+            --     QBCore.Functions.Notify("You need to be on duty!", "error")
+            -- end
         else
             QBCore.Functions.Notify("You are not allowed to complete this action", "error")
         end
@@ -2902,7 +2877,7 @@ AddEventHandler('qb-mechanicparts:HL12', function()
     local PlayerJob = QBCore.Functions.GetPlayerData().job
     headlight = GetVehicleMod(veh, 22)
         if PlayerJob.name == Config.Job then
-            if onDuty then
+            -- if onDuty then
                 if headlight ~= 3 then
                     if vehicle ~= nil and vehicle ~= 0 then
                         if (IsBackEngine(GetEntityModel(vehicle))) then
@@ -2947,9 +2922,9 @@ AddEventHandler('qb-mechanicparts:HL12', function()
                 else
                     QBCore.Functions.Notify("This colour is already installed...", "error")
                 end
-            else
-                QBCore.Functions.Notify("You need to be on duty!", "error")
-            end
+            -- else
+            --     QBCore.Functions.Notify("You need to be on duty!", "error")
+            -- end
         else
             QBCore.Functions.Notify("You are not allowed to complete this action", "error")
         end
@@ -2962,7 +2937,7 @@ AddEventHandler('qb-mechanicparts:Spoiler0', function()
 --     local trunkpos = false
     spoiler = GetVehicleMod(veh, 0)
         if PlayerJob.name == Config.Job then
-            if onDuty then
+            -- if onDuty then
                   if spoiler ~= -1 then 
                     if vehicle ~= nil and vehicle ~= 0 then
                         if (IsBackEngine(GetEntityModel(vehicle))) then
@@ -3010,9 +2985,9 @@ AddEventHandler('qb-mechanicparts:Spoiler0', function()
                 else
                     QBCore.Functions.Notify("That spoiler is already installed...", "error")
                 end
-            else
-                QBCore.Functions.Notify("You need to be on duty!", "error")
-            end
+            -- else
+            --     QBCore.Functions.Notify("You need to be on duty!", "error")
+            -- end
         else
             QBCore.Functions.Notify("You are not allowed to complete this action", "error")
         end
@@ -3023,7 +2998,7 @@ AddEventHandler('qb-mechanicparts:Spoiler1', function()
     local PlayerJob = QBCore.Functions.GetPlayerData().job
     spoiler = GetVehicleMod(veh, 0)
         if PlayerJob.name == Config.Job then
-            if onDuty then
+            -- if onDuty then
                 if spoiler ~= 0 then
                     if vehicle ~= nil and vehicle ~= 0 then
                         if (IsBackEngine(GetEntityModel(vehicle))) then
@@ -3067,9 +3042,9 @@ AddEventHandler('qb-mechanicparts:Spoiler1', function()
                 else
                     QBCore.Functions.Notify("That spoiler is already installed...", "error")
                 end
-            else
-                QBCore.Functions.Notify("You need to be on duty!", "error")
-            end
+            -- else
+            --     QBCore.Functions.Notify("You need to be on duty!", "error")
+            -- end
         else
             QBCore.Functions.Notify("You are not allowed to complete this action", "error")
         end
@@ -3081,7 +3056,7 @@ AddEventHandler('qb-mechanicparts:Spoiler2', function()
     local PlayerJob = QBCore.Functions.GetPlayerData().job
     spoiler = GetVehicleMod(veh, 0)
         if PlayerJob.name == Config.Job then
-            if onDuty then
+            -- if onDuty then
                 if spoiler ~= 1 then 
                     if vehicle ~= nil and vehicle ~= 0 then
                         if (IsBackEngine(GetEntityModel(vehicle))) then
@@ -3125,9 +3100,9 @@ AddEventHandler('qb-mechanicparts:Spoiler2', function()
                 else
                     QBCore.Functions.Notify("That spoiler is already installed...", "error")
                 end
-            else
-                QBCore.Functions.Notify("You need to be on duty!", "error")
-            end
+            -- else
+            --     QBCore.Functions.Notify("You need to be on duty!", "error")
+            -- end
         else
             QBCore.Functions.Notify("You are not allowed to complete this action", "error")
         end
@@ -3139,7 +3114,7 @@ AddEventHandler('qb-mechanicparts:Spoiler3', function()
     local PlayerJob = QBCore.Functions.GetPlayerData().job
     spoiler = GetVehicleMod(veh, 0)
         if PlayerJob.name == Config.Job then
-            if onDuty then
+            -- if onDuty then
                 if spoiler ~= 2 then 
                     if vehicle ~= nil and vehicle ~= 0 then
                         if (IsBackEngine(GetEntityModel(vehicle))) then
@@ -3183,9 +3158,9 @@ AddEventHandler('qb-mechanicparts:Spoiler3', function()
                 else
                     QBCore.Functions.Notify("That spoiler is already installed...", "error")
                 end
-            else
-                QBCore.Functions.Notify("You need to be on duty!", "error")
-            end
+            -- else
+            --     QBCore.Functions.Notify("You need to be on duty!", "error")
+            -- end
         else
             QBCore.Functions.Notify("You are not allowed to complete this action", "error")
         end
@@ -3198,7 +3173,7 @@ AddEventHandler('qb-mechanicparts:Spoiler4', function()
     local PlayerJob = QBCore.Functions.GetPlayerData().job
     spoiler = GetVehicleMod(veh, 0)
         if PlayerJob.name == Config.Job then
-            if onDuty then
+            -- if onDuty then
                 if spoiler ~= 3 then 
                     if vehicle ~= nil and vehicle ~= 0 then
                         if (IsBackEngine(GetEntityModel(vehicle))) then
@@ -3242,9 +3217,9 @@ AddEventHandler('qb-mechanicparts:Spoiler4', function()
                 else
                     QBCore.Functions.Notify("That spoiler is already installed...", "error")
                 end
-            else
-                QBCore.Functions.Notify("You need to be on duty!", "error")
-            end
+            -- else
+            --     QBCore.Functions.Notify("You need to be on duty!", "error")
+            -- end
         else
             QBCore.Functions.Notify("You are not allowed to complete this action", "error")
         end
@@ -3478,21 +3453,13 @@ RegisterNetEvent('craft:transmissions', function()
         {
             id = 5,
             header = "Transmission Upgrade D",
-            txt = "4x MetalScrap | 1x Rubber | 1x Plastic | 2x Aluminum | 2x Steel | 2x Iron",
+            txt = "4x MetalScrap | 1x Rubber | 1x Plastic | 2x Aluminum | 3x Steel | 2x Iron",
             params = {
                 event = "craft:transmission3",
             }
         },
         {
             id = 6,
-            header = "Transmission Upgrade S",
-            txt = "4x MetalScrap | 1x Rubber | 1x Plastic | 4x Aluminum | 2x Steel | 2x Iron",
-            params = {
-                event = "craft:transmission4",
-            }
-        },
-        {
-            id = 7,
             header = "Main Menu",
             txt = "Back to main menu",
             params = {
@@ -3692,7 +3659,7 @@ RegisterNetEvent('craft:vehmods', function()
     local vehicle = QBCore.Functions.GetClosestVehicle()
     local plate = QBCore.Functions.GetPlate(vehicle)
     local statusList = exports['qb-mechanicjob']:GetVehicleStatusList(plate)
-    local fuel = exports['lj-fuel']:GetFuel(vehicle)
+    local fuel = exports['ps-fuel']:GetFuel(vehicle)
     local turbo = "N/A"
     if IsToggleModOn(vehicle, 18) == 1 then
         turbo = "Turbo"
@@ -3810,13 +3777,13 @@ end)
 RegisterNetEvent('craft:vehstatus', function()
 
     local statusList = exports['qb-mechanicjob']:GetVehicleStatusList(plate)
-    fuel = exports['lj-fuel']:GetFuel(vehicle)
+    fuel = exports['ps-fuel']:GetFuel(vehicle)
     vehicle = QBCore.Functions.GetClosestVehicle()
     plate = GetVehicleNumberPlateText(vehicle)
     engineHealth = GetVehicleEngineHealth(vehicle)
     vehTemp = GetVehicleEngineTemperature(vehicle)
     bodyHealth = GetVehicleBodyHealth(vehicle)
-    fuelHealth = exports['lj-fuel']:GetFuel(vehicle)
+    fuelHealth = exports['ps-fuel']:GetFuel(vehicle)
     tankHealth = GetVehiclePetrolTankHealth(vehicle)
 
     exports['qb-menu']:openMenu({
