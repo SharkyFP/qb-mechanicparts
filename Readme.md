@@ -1,4 +1,4 @@
-# WIP
+# Edited version of qb-mechanicparts, future updates cooming 
 
 # A Mechanic Job for QBCore Framework
 Features :
