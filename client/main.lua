@@ -775,14 +775,14 @@ AddEventHandler('qb-mechanicparts:E1', function()
                                     saveVehicle()  
                                     TriggerServerEvent("QBCore:Server:RemoveItem", "engine1", 1)
                                     TriggerEvent('inventory:client:ItemBox', QBCore.Shared.Items["engine1"], "remove")
-                                    QBCore.Functions.Notify("Engine Upgrade B Successfully installed", "success")
+                                    QBCore.Functions.Notify("Engine Upgrade 1 Successfully installed", "success")
 
                                 end)
                             end
                         end
                     end
                 else
-                    QBCore.Functions.Notify("Engine Upgrade B already installed...", "error")
+                    QBCore.Functions.Notify("Engine Upgrade 1 already installed...", "error")
                 end
             -- else
             --     QBCore.Functions.Notify("You need to be on duty!", "error")
@@ -833,14 +833,14 @@ AddEventHandler('qb-mechanicparts:E2', function()
                                     saveVehicle()  
                                     TriggerServerEvent("QBCore:Server:RemoveItem", "engine2", 1)
                                     TriggerEvent('inventory:client:ItemBox', QBCore.Shared.Items["engine2"], "remove")
-                                    QBCore.Functions.Notify("Engine Upgrade C Successfully installed", "success")
+                                    QBCore.Functions.Notify("Engine Upgrade 2 Successfully installed", "success")
 
                                 end)
                             end
                         end
                     end
                 else
-                    QBCore.Functions.Notify("Engine Upgrade C already installed...", "error")
+                    QBCore.Functions.Notify("Engine Upgrade 2 already installed...", "error")
                 end
             -- else
             --     QBCore.Functions.Notify("You need to be on duty!", "error")
@@ -891,14 +891,14 @@ AddEventHandler('qb-mechanicparts:E3', function()
                                     saveVehicle()  
                                     TriggerServerEvent("QBCore:Server:RemoveItem", "engine3", 1)
                                     TriggerEvent('inventory:client:ItemBox', QBCore.Shared.Items["engine3"], "remove")
-                                    QBCore.Functions.Notify("Engine Upgrade D Successfully installed", "success")
+                                    QBCore.Functions.Notify("Engine Upgrade 3 Successfully installed", "success")
 
                                 end)
                             end
                         end
                     end
                 else
-                    QBCore.Functions.Notify("Engine Upgrade D already installed...", "error")
+                    QBCore.Functions.Notify("Engine Upgrade 3 already installed...", "error")
                 end
             -- else
             --     QBCore.Functions.Notify("You need to be on duty!", "error")
@@ -950,14 +950,14 @@ AddEventHandler('qb-mechanicparts:E4', function()
                                     saveVehicle()  
                                     TriggerServerEvent("QBCore:Server:RemoveItem", "engine4", 1)
                                     TriggerEvent('inventory:client:ItemBox', QBCore.Shared.Items["engine4"], "remove")
-                                    QBCore.Functions.Notify("Engine Upgrade S Successfully installed", "success")
+                                    QBCore.Functions.Notify("Engine Upgrade 4 Successfully installed", "success")
 
                                 end)
                             end
                         end
                     end
                 else
-                    QBCore.Functions.Notify("Engine Upgrade S already installed...", "error")
+                    QBCore.Functions.Notify("Engine Upgrade 4 already installed...", "error")
                 end
             -- else
             --     QBCore.Functions.Notify("You need to be on duty!", "error")
@@ -1067,14 +1067,14 @@ AddEventHandler('qb-mechanicparts:B1', function()
                                     saveVehicle()  
                                     TriggerServerEvent("QBCore:Server:RemoveItem", "brake1", 1)
                                     TriggerEvent('inventory:client:ItemBox', QBCore.Shared.Items["brake1"], "remove")
-                                    QBCore.Functions.Notify("Brake Upgrade B Successfully installed", "success")
+                                    QBCore.Functions.Notify("Brake Upgrade 1 Successfully installed", "success")
 
                                 end)
                             end
                         end
                     end
                 else
-                    QBCore.Functions.Notify("Brakes Upgrade B already installed...", "error")
+                    QBCore.Functions.Notify("Brakes Upgrade 1 already installed...", "error")
                 end
             -- else
             --     QBCore.Functions.Notify("You need to be on duty!", "error")
@@ -1125,14 +1125,14 @@ AddEventHandler('qb-mechanicparts:B2', function()
                                     saveVehicle()  
                                     TriggerServerEvent("QBCore:Server:RemoveItem", "brake2", 1)
                                     TriggerEvent('inventory:client:ItemBox', QBCore.Shared.Items["brake2"], "remove")
-                                    QBCore.Functions.Notify("Brakes Upgrade C Successfully installed", "success")
+                                    QBCore.Functions.Notify("Brakes Upgrade 2 Successfully installed", "success")
 
                                 end)
                             end
                         end
                     end
                 else
-                    QBCore.Functions.Notify("Brakes Upgrade C already installed...", "error")
+                    QBCore.Functions.Notify("Brakes Upgrade 2 already installed...", "error")
                 end
             -- else
             --     QBCore.Functions.Notify("You need to be on duty!", "error")
@@ -1183,14 +1183,14 @@ AddEventHandler('qb-mechanicparts:B3', function()
                                     saveVehicle()  
                                     TriggerServerEvent("QBCore:Server:RemoveItem", "brake3", 1)
                                     TriggerEvent('inventory:client:ItemBox', QBCore.Shared.Items["brake3"], "remove")
-                                    QBCore.Functions.Notify("Brakes Upgrade D Successfully installed", "success")
+                                    QBCore.Functions.Notify("Brakes Upgrade 3 Successfully installed", "success")
 
                                 end)
                             end
                         end
                     end
                 else
-                    QBCore.Functions.Notify("Brakes Upgrade D already installed...", "error")
+                    QBCore.Functions.Notify("Brakes Upgrade 3 already installed...", "error")
                 end
             -- else
             --     QBCore.Functions.Notify("You need to be on duty!", "error")
@@ -1300,14 +1300,14 @@ AddEventHandler('qb-mechanicparts:T1', function()
                                     saveVehicle()  
                                     TriggerServerEvent("QBCore:Server:RemoveItem", "transmission1", 1)
                                     TriggerEvent('inventory:client:ItemBox', QBCore.Shared.Items["transmission1"], "remove")
-                                    QBCore.Functions.Notify("Transmission Upgrade B Successfully installed", "success")
+                                    QBCore.Functions.Notify("Transmission Upgrade 1 Successfully installed", "success")
 
                                 end)
                             end
                         end
                     end
                 else
-                    QBCore.Functions.Notify("Transmission Upgrade B already installed...", "error")
+                    QBCore.Functions.Notify("Transmission Upgrade 1 already installed...", "error")
                 end
             -- else
             --     QBCore.Functions.Notify("You need to be on duty!", "error")
@@ -1358,14 +1358,14 @@ AddEventHandler('qb-mechanicparts:T2', function()
                                     saveVehicle()  
                                     TriggerServerEvent("QBCore:Server:RemoveItem", "transmission2", 1)
                                     TriggerEvent('inventory:client:ItemBox', QBCore.Shared.Items["transmission2"], "remove")
-                                    QBCore.Functions.Notify("Transmission Upgrade C Successfully installed", "success")
+                                    QBCore.Functions.Notify("Transmission Upgrade 2 Successfully installed", "success")
 
                                 end)
                             end
                         end
                     end
                 else
-                    QBCore.Functions.Notify("Transmission Upgrade C already installed...", "error")
+                    QBCore.Functions.Notify("Transmission Upgrade 2 already installed...", "error")
                 end
             -- else
             --     QBCore.Functions.Notify("You need to be on duty!", "error")
@@ -1416,14 +1416,14 @@ AddEventHandler('qb-mechanicparts:T3', function()
                                     saveVehicle()  
                                     TriggerServerEvent("QBCore:Server:RemoveItem", "transmission3", 1)
                                     TriggerEvent('inventory:client:ItemBox', QBCore.Shared.Items["transmission3"], "remove")
-                                    QBCore.Functions.Notify("Transmission Upgrade S Successfully installed", "success")
+                                    QBCore.Functions.Notify("Transmission Upgrade 3 Successfully installed", "success")
 
                                 end)
                             end
                         end
                     end
                 else
-                    QBCore.Functions.Notify("Transmission Upgrade S already installed...", "error")
+                    QBCore.Functions.Notify("Transmission Upgrade 3 already installed...", "error")
                 end
             -- else
             --     QBCore.Functions.Notify("You need to be on duty!", "error")
@@ -1533,14 +1533,14 @@ AddEventHandler('qb-mechanicparts:S1', function()
                                     saveVehicle()  
                                     TriggerServerEvent("QBCore:Server:RemoveItem", "suspension1", 1)
                                     TriggerEvent('inventory:client:ItemBox', QBCore.Shared.Items["suspension1"], "remove")
-                                    QBCore.Functions.Notify("Suspension Upgrade B Successfully installed", "success")
+                                    QBCore.Functions.Notify("Suspension Upgrade 1 Successfully installed", "success")
 
                                 end)
                             end
                         end
                     end
                 else
-                    QBCore.Functions.Notify("Suspension Upgrade B already installed...", "error")
+                    QBCore.Functions.Notify("Suspension Upgrade 1 already installed...", "error")
                 end
             -- else
             --     QBCore.Functions.Notify("You need to be on duty!", "error")
@@ -1591,14 +1591,14 @@ AddEventHandler('qb-mechanicparts:S2', function()
                                     saveVehicle()  
                                     TriggerServerEvent("QBCore:Server:RemoveItem", "suspension2", 1)
                                     TriggerEvent('inventory:client:ItemBox', QBCore.Shared.Items["suspension2"], "remove")
-                                    QBCore.Functions.Notify("Suspension Upgrade C Successfully installed", "success")
+                                    QBCore.Functions.Notify("Suspension Upgrade 2 Successfully installed", "success")
 
                                 end)
                             end
                         end
                     end
                 else
-                    QBCore.Functions.Notify("Suspension Upgrade C already installed...", "error")
+                    QBCore.Functions.Notify("Suspension Upgrade 2 already installed...", "error")
                 end
             -- else
             --     QBCore.Functions.Notify("You need to be on duty!", "error")
@@ -1649,14 +1649,14 @@ AddEventHandler('qb-mechanicparts:S3', function()
                                     saveVehicle()  
                                     TriggerServerEvent("QBCore:Server:RemoveItem", "suspension3", 1)
                                     TriggerEvent('inventory:client:ItemBox', QBCore.Shared.Items["suspension3"], "remove")
-                                    QBCore.Functions.Notify("Suspension Upgrade D Successfully installed", "success")
+                                    QBCore.Functions.Notify("Suspension Upgrade 3 Successfully installed", "success")
 
                                 end)
                             end
                         end
                     end
                 else
-                    QBCore.Functions.Notify("Suspension Upgrade D already installed...", "error")
+                    QBCore.Functions.Notify("Suspension Upgrade 3 already installed...", "error")
                 end
             -- else
             --     QBCore.Functions.Notify("You need to be on duty!", "error")
@@ -1707,14 +1707,14 @@ AddEventHandler('qb-mechanicparts:S4', function()
                                     saveVehicle()  
                                     TriggerServerEvent("QBCore:Server:RemoveItem", "suspension4", 1)
                                     TriggerEvent('inventory:client:ItemBox', QBCore.Shared.Items["suspension4"], "remove")
-                                    QBCore.Functions.Notify("Suspension Upgrade S Successfully installed", "success")
+                                    QBCore.Functions.Notify("Suspension Upgrade 4 Successfully installed", "success")
 
                                 end)
                             end
                         end
                     end
                 else
-                    QBCore.Functions.Notify("Suspension Upgrade S already installed...", "error")
+                    QBCore.Functions.Notify("Suspension Upgrade 4 already installed...", "error")
                 end
             -- else
             --     QBCore.Functions.Notify("You need to be on duty!", "error")
@@ -3291,7 +3291,7 @@ RegisterNetEvent('craft:engines', function()
         },
         {
             id = 3,
-            header = "Engine Upgrade B",
+            header = "Engine Upgrade 1",
             txt = " 2x Metalscrap | 1x Aluminum | 1x Steel | 1x Iron ",
             params = {
                 event = "craft:engine1",
@@ -3299,7 +3299,7 @@ RegisterNetEvent('craft:engines', function()
         },
         {
             id = 4,
-            header = "Engine Upgrade C",
+            header = "Engine Upgrade 2",
             txt = " 8x Metalscrap | 1x Rubber | 1x Plastic | 2x Aluminum | 2x Steel | 2x Iron ",
             params = {
                 event = "craft:engine2",
@@ -3307,7 +3307,7 @@ RegisterNetEvent('craft:engines', function()
         },
         {
             id = 5,
-            header = "Engine Upgrade D",
+            header = "Engine Upgrade 3",
             txt = " 8x Metalscrap | 2x Rubber | 2x Plastic | 4x Aluminum | 4x Steel | 4x Iron ",
             params = {
                 event = "craft:engine3",
@@ -3315,7 +3315,7 @@ RegisterNetEvent('craft:engines', function()
         },
         {
             id = 6,
-            header = "Engine Upgrade S",
+            header = "Engine Upgrade 4",
             txt = " 8x Metalscrap | 4x Rubber | 4x Plastic | 4x Aluminum | 6x Steel | 4x Iron ",
             params = {
                 event = "craft:engine4",
@@ -3351,7 +3351,7 @@ RegisterNetEvent('craft:brakes', function()
         },
         {
             id = 3,
-            header = "Brake Upgrade B",
+            header = "Brake Upgrade 1",
             txt = "1x MetalScrap | 1x Rubber | 1x Plastic | 1x Aluminum",
             params = {
                 event = "craft:brake1",
@@ -3359,7 +3359,7 @@ RegisterNetEvent('craft:brakes', function()
         },
         {
             id = 4,
-            header = "Brake Upgrade C",
+            header = "Brake Upgrade 2",
             txt = "2x MetalScrap | 1x Rubber | 1x Plastic | 1x Aluminum",
             params = {
                 event = "craft:brake2",
@@ -3367,7 +3367,7 @@ RegisterNetEvent('craft:brakes', function()
         },
         {
             id = 5,
-            header = "Brake Upgrade D",
+            header = "Brake Upgrade 3",
             txt = "2x MetalScrap | 2x Rubber | 1x Plastic | 1x Aluminum",
             params = {
                 event = "craft:brake3",
@@ -3403,7 +3403,7 @@ RegisterNetEvent('craft:transmissions', function()
         },
         {
             id = 3,
-            header = "Transmission Upgrade B",
+            header = "Transmission Upgrade 1",
             txt = "3x MetalScrap | 1x Rubber | 1x Plastic | 1x Aluminum | 2x Steel | 1x Iron",
             params = {
                 event = "craft:transmission1",
@@ -3411,7 +3411,7 @@ RegisterNetEvent('craft:transmissions', function()
         },
         {
             id = 4,
-            header = "Transmission Upgrade C",
+            header = "Transmission Upgrade 2",
             txt = "3x MetalScrap | 1x Rubber | 1x Plastic | 2x Aluminum | 2x Steel | 2x Iron",
             params = {
                 event = "craft:transmission2",
@@ -3419,7 +3419,7 @@ RegisterNetEvent('craft:transmissions', function()
         },
         {
             id = 5,
-            header = "Transmission Upgrade D",
+            header = "Transmission Upgrade 3",
             txt = "4x MetalScrap | 1x Rubber | 1x Plastic | 2x Aluminum | 3x Steel | 2x Iron",
             params = {
                 event = "craft:transmission3",
@@ -3455,7 +3455,7 @@ RegisterNetEvent('craft:suspensions', function()
         },
         {
             id = 3,
-            header = "Suspension Upgrade B",
+            header = "Suspension Upgrade 1",
             txt = "3x MetalScrap | 1x Rubber | 1x Plastic | 1x Aluminum | 2x Steel | 1x Iron",
             params = {
                 event = "craft:suspension1",
@@ -3463,7 +3463,7 @@ RegisterNetEvent('craft:suspensions', function()
         },
         {
             id = 4,
-            header = "Suspension Upgrade C",
+            header = "Suspension Upgrade 2",
             txt = "3x MetalScrap | 1x Rubber | 1x Plastic | 2x Aluminum | 2x Steel | 2x Iron",
             params = {
                 event = "craft:suspension2",
@@ -3471,7 +3471,7 @@ RegisterNetEvent('craft:suspensions', function()
         },
         {
             id = 5,
-            header = "Suspension Upgrade D",
+            header = "Suspension Upgrade 3",
             txt = "4x MetalScrap | 1x Rubber | 1x Plastic | 2x Aluminum | 2x Steel | 2x Iron",
             params = {
                 event = "craft:suspension3",
@@ -3479,7 +3479,7 @@ RegisterNetEvent('craft:suspensions', function()
         },
         {
             id = 6,
-            header = "Suspension Upgrade S",
+            header = "Suspension Upgrade 4",
             txt = "4x MetalScrap | 1x Rubber | 1x Plastic | 4x Aluminum | 2x Steel | 2x Iron",
             params = {
                 event = "craft:suspension4",
