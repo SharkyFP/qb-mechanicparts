@@ -546,7 +546,7 @@ AddEventHandler("craft:engine1", function()
 
             Player.Functions.AddItem("engine1", 1)
             TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items["engine1"], "add")
-            TriggerClientEvent('QBCore:Notify', src, 'You built a Engine Upgrade B.', 'success')
+            TriggerClientEvent('QBCore:Notify', src, 'You built a Engine Upgrade 1.', 'success')
 
         else
             TriggerClientEvent('QBCore:Notify', src, 'You dont have the correct amount of something...', 'error')
@@ -576,7 +576,7 @@ AddEventHandler("craft:engine2", function()
 
             Player.Functions.AddItem("engine2", 1)
             TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items["engine2"], "add")
-            TriggerClientEvent('QBCore:Notify', src, 'You built a Engine Upgrade C.', 'success')
+            TriggerClientEvent('QBCore:Notify', src, 'You built a Engine Upgrade 2.', 'success')
 
         else
             TriggerClientEvent('QBCore:Notify', src, 'You dont have the correct amount of something...', 'error')
@@ -606,7 +606,7 @@ AddEventHandler("craft:engine3", function()
  
             Player.Functions.AddItem("engine3", 1)
             TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items["engine3"], "add")
-            TriggerClientEvent('QBCore:Notify', src, 'You built a Engine Upgrade D.', 'success')
+            TriggerClientEvent('QBCore:Notify', src, 'You built a Engine Upgrade 3.', 'success')
 
         else
             TriggerClientEvent('QBCore:Notify', src, 'You dont have the correct amount of something...', 'error')
@@ -638,7 +638,7 @@ AddEventHandler("craft:engine4", function()
 
             Player.Functions.AddItem("engine4", 1)
             TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items["engine4"], "add")
-            TriggerClientEvent('QBCore:Notify', src, 'You built a Engine Upgrade S.', 'success')
+            TriggerClientEvent('QBCore:Notify', src, 'You built a Engine Upgrade 4.', 'success')
 
         else
             TriggerClientEvent('QBCore:Notify', src, 'You dont have the correct amount of something...', 'error')
@@ -694,7 +694,7 @@ AddEventHandler("craft:brake1", function()
 
             Player.Functions.AddItem("brake1", 1)
             TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items["brake1"], "add")
-            TriggerClientEvent('QBCore:Notify', src, 'You built Brake Upgrade B.', 'success')
+            TriggerClientEvent('QBCore:Notify', src, 'You built Brake Upgrade 1.', 'success')
 
         else
             TriggerClientEvent('QBCore:Notify', src, 'You dont have the correct amount of something...', 'error')
@@ -722,7 +722,7 @@ AddEventHandler("craft:brake2", function()
 
             Player.Functions.AddItem("brake2", 1)
             TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items["brake2"], "add")
-            TriggerClientEvent('QBCore:Notify', src, 'You built Brake Upgrade C.', 'success')
+            TriggerClientEvent('QBCore:Notify', src, 'You built Brake Upgrade 2.', 'success')
 
         else
             TriggerClientEvent('QBCore:Notify', src, 'You dont have the correct amount of something...', 'error')
@@ -750,7 +750,7 @@ AddEventHandler("craft:brake3", function()
 
             Player.Functions.AddItem("brake3", 1)
             TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items["brake3"], "add")
-            TriggerClientEvent('QBCore:Notify', src, 'You built Brake Upgrade D.', 'success')
+            TriggerClientEvent('QBCore:Notify', src, 'You built Brake Upgrade 3.', 'success')
 
         else
             TriggerClientEvent('QBCore:Notify', src, 'You dont have the correct amount of something...', 'error')
@@ -818,7 +818,7 @@ AddEventHandler("craft:transmission1", function()
 
             Player.Functions.AddItem("transmission1", 1)
             TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items["transmission1"], "add")
-            TriggerClientEvent('QBCore:Notify', src, 'You built Transmission Upgrade B.', 'success')
+            TriggerClientEvent('QBCore:Notify', src, 'You built Transmission Upgrade 1.', 'success')
 
         else
             TriggerClientEvent('QBCore:Notify', src, 'You dont have the correct amount of something...', 'error')
@@ -852,7 +852,7 @@ AddEventHandler("craft:transmission2", function()
 
             Player.Functions.AddItem("transmission2", 1)
             TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items["transmission2"], "add")
-            TriggerClientEvent('QBCore:Notify', src, 'You built Transmission Upgrade C.', 'success')
+            TriggerClientEvent('QBCore:Notify', src, 'You built Transmission Upgrade 2.', 'success')
 
         else
             TriggerClientEvent('QBCore:Notify', src, 'You dont have the correct amount of something...', 'error')
@@ -886,7 +886,7 @@ AddEventHandler("craft:transmission3", function()
 
             Player.Functions.AddItem("transmission3", 1)
             TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items["transmission3"], "add")
-            TriggerClientEvent('QBCore:Notify', src, 'You built Transmission Upgrade D.', 'success')
+            TriggerClientEvent('QBCore:Notify', src, 'You built Transmission Upgrade 3.', 'success')
 
         else
             TriggerClientEvent('QBCore:Notify', src, 'You dont have the correct amount of something...', 'error')
@@ -954,7 +954,7 @@ AddEventHandler("craft:suspension1", function()
 
             Player.Functions.AddItem("suspension1", 1)
             TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items["suspension1"], "add")
-            TriggerClientEvent('QBCore:Notify', src, 'You built a Suspension Upgrade B.', 'success')
+            TriggerClientEvent('QBCore:Notify', src, 'You built a Suspension Upgrade 1.', 'success')
 
         else
             TriggerClientEvent('QBCore:Notify', src, 'You dont have the correct amount of something...', 'error')
@@ -988,7 +988,7 @@ AddEventHandler("craft:suspension2", function()
 
             Player.Functions.AddItem("suspension2", 1)
             TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items["suspension2"], "add")
-            TriggerClientEvent('QBCore:Notify', src, 'You built a Suspension Upgrade C.', 'success')
+            TriggerClientEvent('QBCore:Notify', src, 'You built a Suspension Upgrade 2.', 'success')
 
         else
             TriggerClientEvent('QBCore:Notify', src, 'You dont have the correct amount of something...', 'error')
@@ -1022,7 +1022,7 @@ AddEventHandler("craft:suspension3", function()
 
             Player.Functions.AddItem("suspension3", 1)
             TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items["suspension3"], "add")
-            TriggerClientEvent('QBCore:Notify', src, 'You built a Suspension Upgrade D.', 'success')
+            TriggerClientEvent('QBCore:Notify', src, 'You built a Suspension Upgrade 3.', 'success')
 
         else
             TriggerClientEvent('QBCore:Notify', src, 'You dont have the correct amount of something...', 'error')
@@ -1056,7 +1056,7 @@ AddEventHandler("craft:suspension4", function()
 
             Player.Functions.AddItem("suspension4", 1)
             TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items["suspension4"], "add")
-            TriggerClientEvent('QBCore:Notify', src, 'You built a Suspension Upgrade S.', 'success')
+            TriggerClientEvent('QBCore:Notify', src, 'You built a Suspension Upgrade 4.', 'success')
 
         else
             TriggerClientEvent('QBCore:Notify', src, 'You dont have the correct amount of something...', 'error')
