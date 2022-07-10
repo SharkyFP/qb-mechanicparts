@@ -657,7 +657,7 @@ AddEventHandler("craft:brake0", function()
     local rubber = Player.Functions.GetItemByName("rubber")
     local iron = Player.Functions.GetItemByName("iron")
     local metalscrap = Player.Functions.GetItemByName("metalscrap")
-    if rubber ~= nil and iron ~= nil  and metalscrap ~= nil then
+    if rubber ~= nil and iron ~= nil and metalscrap ~= nil then
 
         if rubber.amount >= 2 and iron.amount >= 1 and metalscrap.amount >= 2 then
             Player.Functions.RemoveItem("rubber", 2)
@@ -685,7 +685,7 @@ AddEventHandler("craft:brake1", function()
     local rubber = Player.Functions.GetItemByName("rubber")
     local iron = Player.Functions.GetItemByName("iron")
     local metalscrap = Player.Functions.GetItemByName("metalscrap")
-    if rubber ~= nil and iron ~= nil  and metalscrap ~= nil then
+    if rubber ~= nil and iron ~= nil and metalscrap ~= nil then
 
         if rubber.amount >= 2 and iron.amount >= 1 and metalscrap.amount >= 2 then
             Player.Functions.RemoveItem("rubber", 2)
@@ -713,7 +713,7 @@ AddEventHandler("craft:brake2", function()
     local rubber = Player.Functions.GetItemByName("rubber")
     local iron = Player.Functions.GetItemByName("iron")
     local metalscrap = Player.Functions.GetItemByName("metalscrap")
-    if rubber ~= nil and iron ~= nil  and metalscrap ~= nil then
+    if rubber ~= nil and iron ~= nil and metalscrap ~= nil then
 
         if rubber.amount >= 2 and iron.amount >= 1 and metalscrap.amount >= 2 then
             Player.Functions.RemoveItem("rubber", 2)
@@ -741,7 +741,7 @@ AddEventHandler("craft:brake3", function()
     local rubber = Player.Functions.GetItemByName("rubber")
     local iron = Player.Functions.GetItemByName("iron")
     local metalscrap = Player.Functions.GetItemByName("metalscrap")
-    if rubber ~= nil and iron ~= nil  and metalscrap ~= nil then
+    if rubber ~= nil and iron ~= nil and metalscrap ~= nil then
 
         if rubber.amount >= 3 and iron.amount >= 2 and metalscrap.amount >= 2 then
             Player.Functions.RemoveItem("rubber", 3)
@@ -751,34 +751,6 @@ AddEventHandler("craft:brake3", function()
             Player.Functions.AddItem("brake3", 1)
             TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items["brake3"], "add")
             TriggerClientEvent('QBCore:Notify', src, 'You built Brake Upgrade D.', 'success')
-
-        else
-            TriggerClientEvent('QBCore:Notify', src, 'You dont have the correct amount of something...', 'error')
-        end
-
-    else
-        TriggerClientEvent("QBCore:Notify", src, "You are missing parts...", "error")
-    end
-
-end)
-
-RegisterServerEvent("craft:brake4")
-AddEventHandler("craft:brake4", function()
-    local src = source
-    local Player = QBCore.Functions.GetPlayer(src)
-    local rubber = Player.Functions.GetItemByName("rubber")
-    local iron = Player.Functions.GetItemByName("iron")
-    local metalscrap = Player.Functions.GetItemByName("metalscrap")
-    if rubber ~= nil and iron ~= nil  and metalscrap ~= nil then
-
-        if rubber.amount >= 3 and iron.amount >= 2 and metalscrap.amount >= 3 then
-            Player.Functions.RemoveItem("rubber", 3)
-            Player.Functions.RemoveItem("iron", 2)
-            Player.Functions.RemoveItem("metalscrap", 2)
-
-            Player.Functions.AddItem("brake4", 1)
-            TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items["brake4"], "add")
-            TriggerClientEvent('QBCore:Notify', src, 'You built Brake Upgrade S.', 'success')
 
         else
             TriggerClientEvent('QBCore:Notify', src, 'You dont have the correct amount of something...', 'error')
@@ -801,7 +773,7 @@ AddEventHandler("craft:transmission0", function()
     local rubber = Player.Functions.GetItemByName("rubber")
     local iron = Player.Functions.GetItemByName("iron")
     local metalscrap = Player.Functions.GetItemByName("metalscrap")
-    if rubber ~= nil and iron ~= nil  and metalscrap ~= nil and steel ~= nil and plastic ~= nil then
+    if rubber ~= nil and iron ~= nil and metalscrap ~= nil and steel ~= nil and plastic ~= nil then
 
         if rubber.amount >= 1 and iron.amount >= 2 and plastic.amount >= 1 and steel.amount >= 1 and metalscrap.amount >= 3 then
             Player.Functions.RemoveItem("rubber", 1)
@@ -833,7 +805,8 @@ AddEventHandler("craft:transmission1", function()
     local rubber = Player.Functions.GetItemByName("rubber")
     local iron = Player.Functions.GetItemByName("iron")
     local metalscrap = Player.Functions.GetItemByName("metalscrap")
-    if rubber ~= nil and iron ~= nil  and metalscrap ~= nil and steel ~= nil and plastic ~= nil and aluminum ~= nil then
+    local aluminum = Player.Functions.GetItemByName("aluminum")
+    if rubber ~= nil and iron ~= nil and metalscrap ~= nil and steel ~= nil and plastic ~= nil and aluminum ~= nil then
 
         if rubber.amount >= 1 and iron.amount >= 1 and plastic.amount >= 1 and steel.amount >= 1 and metalscrap.amount >= 3 and aluminum.amount >= 1 then
             Player.Functions.RemoveItem("rubber", 1)
@@ -866,7 +839,8 @@ AddEventHandler("craft:transmission2", function()
     local rubber = Player.Functions.GetItemByName("rubber")
     local iron = Player.Functions.GetItemByName("iron")
     local metalscrap = Player.Functions.GetItemByName("metalscrap")
-    if rubber ~= nil and iron ~= nil  and metalscrap ~= nil and steel ~= nil and plastic ~= nil and aluminum ~= nil then
+    local aluminum = Player.Functions.GetItemByName("aluminum")
+    if rubber ~= nil and iron ~= nil and metalscrap ~= nil and steel ~= nil and plastic ~= nil and aluminum ~= nil then
 
         if rubber.amount >= 1 and iron.amount >= 2 and plastic.amount >= 1 and steel.amount >= 1 and metalscrap.amount >= 3 and aluminum.amount >= 2 then
             Player.Functions.RemoveItem("rubber", 1)
@@ -899,7 +873,8 @@ AddEventHandler("craft:transmission3", function()
     local rubber = Player.Functions.GetItemByName("rubber")
     local iron = Player.Functions.GetItemByName("iron")
     local metalscrap = Player.Functions.GetItemByName("metalscrap")
-    if rubber ~= nil and iron ~= nil  and metalscrap ~= nil and steel ~= nil and plastic ~= nil and aluminum ~= nil then
+    local aluminum = Player.Functions.GetItemByName("aluminum")
+    if rubber ~= nil and iron ~= nil and metalscrap ~= nil and steel ~= nil and plastic ~= nil and aluminum ~= nil then
 
         if rubber.amount >= 1 and iron.amount >= 2 and plastic.amount >= 1 and steel.amount >= 3 and metalscrap.amount >= 4 and aluminum.amount >= 2 then
             Player.Functions.RemoveItem("rubber", 1)
@@ -934,7 +909,7 @@ AddEventHandler("craft:suspension0", function()
     local metalscrap = Player.Functions.GetItemByName("metalscrap")
     local plastic = Player.Functions.GetItemByName("plastic")
     local steel = Player.Functions.GetItemByName("steel")
-    if rubber ~= nil and iron ~= nil  and metalscrap ~= nil and plastic ~= nil and steel ~= nil then
+    if rubber ~= nil and iron ~= nil and metalscrap ~= nil and plastic ~= nil and steel ~= nil then
 
         if rubber.amount >= 1 and iron.amount >= 2 and metalscrap.amount >= 3 and plastic.amount >= 1 and steel.amount >= 1 then
             Player.Functions.RemoveItem("rubber", 1)
@@ -945,7 +920,7 @@ AddEventHandler("craft:suspension0", function()
 
             Player.Functions.AddItem("suspension0", 1)
             TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items["suspension0"], "add")
-            TriggerClientEvent('QBCore:Notify', src, 'You built a stock Turbo.', 'success')
+            TriggerClientEvent('QBCore:Notify', src, 'You built a stock Suspension.', 'success')
 
         else
             TriggerClientEvent('QBCore:Notify', src, 'You dont have the correct amount of something...', 'error')
@@ -966,7 +941,8 @@ AddEventHandler("craft:suspension1", function()
     local metalscrap = Player.Functions.GetItemByName("metalscrap")
     local plastic = Player.Functions.GetItemByName("plastic")
     local steel = Player.Functions.GetItemByName("steel")
-    if rubber ~= nil and iron ~= nil  and metalscrap ~= nil and plastic ~= nil and steel ~= nil and aluminum ~= nil then
+    local aluminum = Player.Functions.GetItemByName("aluminum")
+    if rubber ~= nil and iron ~= nil and metalscrap ~= nil and plastic ~= nil and steel ~= nil and aluminum ~= nil then
 
         if rubber.amount >= 1 and iron.amount >= 1 and metalscrap.amount >= 3 and plastic.amount >= 1 and steel.amount >= 2 and aluminum.amount >= 1 then
             Player.Functions.RemoveItem("rubber", 1)
@@ -978,7 +954,7 @@ AddEventHandler("craft:suspension1", function()
 
             Player.Functions.AddItem("suspension1", 1)
             TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items["suspension1"], "add")
-            TriggerClientEvent('QBCore:Notify', src, 'You built a stock Turbo.', 'success')
+            TriggerClientEvent('QBCore:Notify', src, 'You built a Suspension Upgrade B.', 'success')
 
         else
             TriggerClientEvent('QBCore:Notify', src, 'You dont have the correct amount of something...', 'error')
@@ -999,7 +975,8 @@ AddEventHandler("craft:suspension2", function()
     local metalscrap = Player.Functions.GetItemByName("metalscrap")
     local plastic = Player.Functions.GetItemByName("plastic")
     local steel = Player.Functions.GetItemByName("steel")
-    if rubber ~= nil and iron ~= nil  and metalscrap ~= nil and plastic ~= nil and steel ~= nil and aluminum ~= nil then
+    local aluminum = Player.Functions.GetItemByName("aluminum")
+    if rubber ~= nil and iron ~= nil and metalscrap ~= nil and plastic ~= nil and steel ~= nil and aluminum ~= nil then
 
         if rubber.amount >= 1 and iron.amount >= 2 and metalscrap.amount >= 3 and plastic.amount >= 1 and steel.amount >= 2 and aluminum.amount >= 2 then
             Player.Functions.RemoveItem("rubber", 1)
@@ -1011,7 +988,7 @@ AddEventHandler("craft:suspension2", function()
 
             Player.Functions.AddItem("suspension2", 1)
             TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items["suspension2"], "add")
-            TriggerClientEvent('QBCore:Notify', src, 'You built a stock Turbo.', 'success')
+            TriggerClientEvent('QBCore:Notify', src, 'You built a Suspension Upgrade C.', 'success')
 
         else
             TriggerClientEvent('QBCore:Notify', src, 'You dont have the correct amount of something...', 'error')
@@ -1032,7 +1009,8 @@ AddEventHandler("craft:suspension3", function()
     local metalscrap = Player.Functions.GetItemByName("metalscrap")
     local plastic = Player.Functions.GetItemByName("plastic")
     local steel = Player.Functions.GetItemByName("steel")
-    if rubber ~= nil and iron ~= nil  and metalscrap ~= nil and plastic ~= nil and steel ~= nil and aluminum ~= nil then
+    local aluminum = Player.Functions.GetItemByName("aluminum")
+    if rubber ~= nil and iron ~= nil and metalscrap ~= nil and plastic ~= nil and steel ~= nil and aluminum ~= nil then
 
         if rubber.amount >= 1 and iron.amount >= 2 and metalscrap.amount >= 4 and plastic.amount >= 1 and steel.amount >= 2 and aluminum.amount >= 2 then
             Player.Functions.RemoveItem("rubber", 1)
@@ -1044,7 +1022,7 @@ AddEventHandler("craft:suspension3", function()
 
             Player.Functions.AddItem("suspension3", 1)
             TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items["suspension3"], "add")
-            TriggerClientEvent('QBCore:Notify', src, 'You built a stock Turbo.', 'success')
+            TriggerClientEvent('QBCore:Notify', src, 'You built a Suspension Upgrade D.', 'success')
 
         else
             TriggerClientEvent('QBCore:Notify', src, 'You dont have the correct amount of something...', 'error')
@@ -1065,7 +1043,8 @@ AddEventHandler("craft:suspension4", function()
     local metalscrap = Player.Functions.GetItemByName("metalscrap")
     local plastic = Player.Functions.GetItemByName("plastic")
     local steel = Player.Functions.GetItemByName("steel")
-    if rubber ~= nil and iron ~= nil  and metalscrap ~= nil and plastic ~= nil and steel ~= nil and aluminum ~= nil then
+    local aluminum = Player.Functions.GetItemByName("aluminum")
+    if rubber ~= nil and iron ~= nil and metalscrap ~= nil and plastic ~= nil and steel ~= nil and aluminum ~= nil then
 
         if rubber.amount >= 1 and iron.amount >= 2 and metalscrap.amount >= 4 and plastic.amount >= 1 and steel.amount >= 2 and aluminum.amount >= 4 then
             Player.Functions.RemoveItem("rubber", 1)
@@ -1077,7 +1056,7 @@ AddEventHandler("craft:suspension4", function()
 
             Player.Functions.AddItem("suspension4", 1)
             TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items["suspension4"], "add")
-            TriggerClientEvent('QBCore:Notify', src, 'You built a stock Turbo.', 'success')
+            TriggerClientEvent('QBCore:Notify', src, 'You built a Suspension Upgrade S.', 'success')
 
         else
             TriggerClientEvent('QBCore:Notify', src, 'You dont have the correct amount of something...', 'error')
