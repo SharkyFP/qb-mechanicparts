@@ -289,31 +289,6 @@ AddEventHandler("craft:brake3", function()
     end)
 end)
 
-RegisterNetEvent('craft:brake4')
-AddEventHandler("craft:brake4", function()
-    QBCore.Functions.Progressbar("craft_brake4", "Building Brake Setup...", 10000, false, true, {
-        disableMovement = true,
-        disableCarMovement = true,
-        disableMouse = false,
-        disableCombat = true,
-    }, {
-        animDict = "mini@repair",
-        anim = "fixing_a_player",
-        flags = 16,
-    }, {}, {}, function() 
-        local playerPed = PlayerPedId()
-        local success = exports['qb-lock']:StartLockPickCircle(1,10)
-   if success then
-        StopAnimTask(ped, dict, "machinic_loop_mechandplayer", 1.0)
-        TriggerServerEvent("craft:brake4")
-        ClearPedTasks(playerPed)
-    else
-        QBCore.Functions.Notify("Failed!", "error")
-        ClearPedTasks(playerPed)
-        end
-    end)
-end)
-
 RegisterNetEvent('craft:transmission0')
 AddEventHandler("craft:transmission0", function()
     QBCore.Functions.Progressbar("craft_transmission0", "Building Transmission...", 10000, false, true, {
@@ -1208,14 +1183,14 @@ AddEventHandler('qb-mechanicparts:B3', function()
                                     saveVehicle()  
                                     TriggerServerEvent("QBCore:Server:RemoveItem", "brake3", 1)
                                     TriggerEvent('inventory:client:ItemBox', QBCore.Shared.Items["brake3"], "remove")
-                                    QBCore.Functions.Notify("Brakes Upgrade S Successfully installed", "success")
+                                    QBCore.Functions.Notify("Brakes Upgrade D Successfully installed", "success")
 
                                 end)
                             end
                         end
                     end
                 else
-                    QBCore.Functions.Notify("Brakes Upgrade S already installed...", "error")
+                    QBCore.Functions.Notify("Brakes Upgrade D already installed...", "error")
                 end
             -- else
             --     QBCore.Functions.Notify("You need to be on duty!", "error")
@@ -3400,14 +3375,6 @@ RegisterNetEvent('craft:brakes', function()
         },
         {
             id = 6,
-            header = "Brake Upgrade S",
-            txt = "3x MetalScrap | 2x Rubber | 1x Plastic | 1x Aluminum",
-            params = {
-                event = "craft:brake4",
-            }
-        },
-        {
-            id = 7,
             header = "Main Menu",
             txt = "Back to main menu",
             params = {
